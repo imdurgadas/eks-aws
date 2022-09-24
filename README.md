@@ -17,4 +17,4 @@ eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster eks-clust
 
 ```
 eksctl create nodegroup --cluster eks-cluster-1 --region ap-south-1 --instance-types t3a.medium,t3.medium --nodes-volume-size 20 --managed --spot --name eks-cluster-spot-ng --asg-access ----full-ecr-access --appmesh--access --alb-ingress-access --external-dns-access nodes-max 5 --ssh-access --ssh-public-key=kube-demo
-``
+```
